@@ -1,0 +1,32 @@
+* {
+    margin: auto;
+}
+
+#container {
+    height: 1000px;
+    width: 1000px;
+    background-color:black;
+    text-align: center;
+
+}
+
+h1 {
+    color: red;
+    text-align: center;
+}
+#userinput{
+    margin: 40px;
+    display: inline-block;
+}
+
+.box1 {
+    height: 75px;
+    width:75px;
+    background-color: red;
+}
+
+.box2 {
+    height: 75px;
+    width: 75px;
+    background-color: grey;
+}
