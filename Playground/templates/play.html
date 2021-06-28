@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playground</title>
+    <style type="text/css">
+        *{
+            margin: auto;
+            padding: auto;
+        }
+
+        body{
+            text-align: center;
+        }
+
+        #container{
+            height: 700px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        #userinput{
+            padding: 30px;
+        }
+        p {
+            padding: 5px;
+        }
+
+        .box {
+            background-color: blue;
+            width: 250px;
+            height: 250px;
+            border-color: black;
+            border-width: 5px;
+            border-style: solid;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lets play with boxes!</h1>
+    <a href="/">Click here to go back</a>
+    <!-- <div id="userinput">
+        <form action="/process" method="post">
+            <p>Number of Boxes: <input type="text" name="num"></p>
+            <p>Color: <input type="text" name= "color"></p>
+            <input type="submit">
+        </form>
+    </div> -->
+    <div id="container">
+        
+        {% for x in range(num) %}
+        <div class="box" style='background-color:{{box_color}};'> </div>
+        {% endfor %}
+    
+    </div>
+</body>
+</html>
